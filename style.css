@@ -131,6 +131,7 @@ main{
     border-radius: 10px;
 }
 
+/*-------------------------GREEN-------------------------*/
 .box-login{
     background-color: white;
 
@@ -142,8 +143,11 @@ main{
     display: grid;
 
     margin-left: 400px;
+
+    border: 4px solid green;
 }
 
+/*-------------------------BLUE-------------------------*/
 .campo-dados{
     display: flex;
 
@@ -155,6 +159,8 @@ main{
     height: min-content;
 
     gap: 30px;
+
+    border: 2px solid blue;
 }
 
 .dados-login{
@@ -167,14 +173,18 @@ main{
     height: 40px;
 }
 
+/*-------------------------RED-------------------------*/
 .botao-login-pai{
     display: flex;
     justify-content: center;
     align-items: center;
 
     height: min-content;
+
+    border: 3px solid red;
 }
 
+/*-------------------------YELLOW-------------------------*/
 .botao-login-filho{
     background-color: gray;
 
@@ -184,6 +194,12 @@ main{
 
     width: 100px;
     height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid yellow;
 }
 
 .botao-login-filho:hover{
@@ -196,8 +212,13 @@ main{
 
     width: 100px;
     height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/*-------------------------PURPLE-------------------------*/
 .texto-login{
     color: #31425e;
 
@@ -208,4 +229,6 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    border: 2px solid purple;
 }
