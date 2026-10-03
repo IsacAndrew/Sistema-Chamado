@@ -64,7 +64,7 @@
 }
 
 .imagem{
-    width: 70px;
+    width: 50px;
     height: min-content;
 }
 
@@ -118,30 +118,46 @@ main{
     place-items: center;
 }
 
+
 .box-main{
     background-color: white;
 
-    width:  1200px;
+    width:  1300px;
     height: 550px;
 
     color: white;
 
     border-radius: 10px;
 
+    border: 2px solid red;
+
+    gap: 50px;
+
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.chat-campo-esquerda{
+.wrap-inicio-card-principal{
+    border: 3px solid green;
+
+    width: auto;
+    height: auto;
+}
+
+.wrap-inicio-card-secundario{
+    border: 3px solid blue;
+}
+.inicio-card{
+    border: 3px solid red;
+
+    height: 100px;
+
     color: black;
 
     display: flex;
-    flex-direction: column;
-
-    gap: 12px;
-    padding: 10px;
-
-    font-size: x-large;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .botao{
@@ -216,7 +232,6 @@ main{
 
     border-radius: 15px;
     border: 1px solid black;
-
 }
 
 .dados-senha{
