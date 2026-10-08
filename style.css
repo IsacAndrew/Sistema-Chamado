@@ -79,7 +79,7 @@
 }
 
 .texto-cab h1{
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .texto-cab h2{
@@ -94,7 +94,7 @@
 aside{
     background-color: #1F2937;
 
-    width: 120px;
+    width: auto;
     height: auto;
 
     display: flex;
@@ -116,7 +116,7 @@ main{
 .box-main{
     background-color: white;
 
-    width:  1300px;
+    width:  1100px;
     height: 550px;
 
     color: white;
@@ -124,22 +124,25 @@ main{
     border-radius: 10px;
 
     border: 2px solid red;
-
-    gap: 50px;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .wrap-inicio-card-principal{
     border: 3px solid green;
 
     width: auto;
-    height: auto;
+    height: min-content;
 }
 
 .wrap-inicio-card-secundario{
     border: 3px solid blue;
+
+    width: auto;
+    height: min-content;
+
+    gap: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .inicio-card{
     border: 3px solid red;
@@ -154,37 +157,13 @@ main{
     text-align: center;
 }
 
-.botao{
-  all: unset; 
-  cursor: pointer;
-  
-  background-color: grey; 
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-
-  border-radius: 10px;
-}   
-
-.botao:hover{
-    all: unset; 
-    cursor: pointer;
-    
-    background-color: grey; 
-    color: white;
-    padding: 10px 20px;
-    font-size: 13px;
-
-    border-radius: 10px;
-}   
-
 .box-login{
     background-color: white;
 
     border-radius: 50px;
 
-    width: 550px;
-    height: 500px;
+    width: 450px;
+    height: 550px;
 
     display: grid;
 
@@ -204,27 +183,16 @@ main{
     height: min-content;
 
     gap: 30px;
-
 }
 
-.dados-login::placeholder{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
+.dados-login,
 .dados-senha::placeholder{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.dados-login{
-    width: 450px;
-    height: 40px;
-
-    border-radius: 15px;
-    border: 1px solid black;
-}
-
+.dados-login,
 .dados-senha{
-    width: 450px;
+    width: 350px;
     height: 40px;
 
     border-radius: 15px;
@@ -236,34 +204,35 @@ main{
     justify-content: center;
     align-items: center;
 
-    height: min-content;
-    /*border: 3px solid red;*/
+    height: auto;
+
+    margin-top: 50px;
 }
 
 .botao-login-filho{
-    background-color: gray;
+    background-color: White;
 
     border-radius: 35px;
+    border:1px solid black;
 
-    color: white;
+    color: black;
 
     width: 100px;
     height: 40px;
 
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    margin-top: 30px;
+    align-items: center;    
 }
 
 .botao-login-filho:hover{
-    background-color: rgb(117, 116, 116);
+    background-color: white;
     cursor: pointer;
 
     border-radius: 35px;
+    border: 1px solid black;
 
-    color: white;
+    color: black;
 
     width: 100px;
     height: 40px;
@@ -284,5 +253,5 @@ main{
     align-items: center;
     flex-direction: column;
 
-    /*border: 2px solid purple;*/
+    margin-top: 30px;
 }
