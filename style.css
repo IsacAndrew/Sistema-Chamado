@@ -121,30 +121,51 @@ main{
 
     color: white;
 
-    border-radius: 10px;
+    border-radius: 10px;    
 
-    border: 2px solid red;
+    box-shadow: 20px 20px 20px #26344a;
 }
 
+/*----Azul----*/
 .wrap-inicio-card-principal{
-    border: 3px solid green;
+    padding: 5px;   
 
     width: auto;
     height: min-content;
+    
+    border: 2px solid blue;
 }
 
+/*----Amarelo----*/
 .wrap-inicio-card-secundario{
-    border: 3px solid blue;
-
     width: auto;
     height: min-content;
 
     gap: 40px;
+    margin: 15px 5px 0px;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+    border: 2px solid gold;
 }
-.inicio-card{
+
+/*----Verde----*/
+.inicio-card:not(.card1){
+    height: 100px;
+
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border: 3px solid green;
+}
+
+/*----Vermelho----*/
+.card1{
     border: 3px solid red;
 
     height: 100px;
@@ -255,3 +276,4 @@ main{
 
     margin-top: 30px;
 }
+
