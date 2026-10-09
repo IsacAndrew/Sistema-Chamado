@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.body-htmls{
+    background-color: #31425e;
+
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 70px minmax(0, 1fr);
+}
+
+.cabecalho{
+    background-color: #151d29;
+
+    width: auto;
+    height: auto;
+
+    grid-column: 1 / -1;
+
+    display: flex;
+
+    justify-content: center;
+
+    position: relative;
+}
+
+.campo-img-icon{
+    color: white;
+
+    width: auto;
+    height: auto;
+
+    display: flex;
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    transform: translatey(-50%);
+
+    margin-right: 40px;
+}
+
+.icone{
+    width: 50px;
+    height: min-content;
+}
+
+.texto-cab{
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    width: min-content;
+    height: min-content;
+
+    color: white;
+    font-weight: bold;
+}
+
+.texto-cab h1{
+    font-size: 25px;
+}
+
+.texto-cab h2{
+    font-size: 20px;
+}
+
+.separador{
+    width: 200px;
+    border-top: 1px solid white;
+}
+
+aside{
+    background-color: #1F2937;
+
+    width: auto;
+    height: auto;
+
+    display: flex;
+}
+
+aside a{
+    color: white;
+    text-decoration: none;
+
+    padding: 10px;
+}
+
+main{
+    display: grid;
+    place-items: center;
+}
+
+.box-main{
+    background-color: white;
+
+    width:  1100px;
+    height: 550px;
+
+    color: white;
+
+    border-radius: 10px;    
+
+    box-shadow: 20px 20px 20px #26344a;
+}
+
+/*--------Azul--------*/
+.wrap-cards{
+    width: auto;
+    height: min-content;
+
+    gap: 40px;
+    margin: 15px 5px 0px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    border: 2px solid blue;
+}
+
+/*--------Verde--------*/
+.cards-inicio:not(.card1){
+    height: 100px;
+
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border: 3px solid green;
+}
+
+/*--------Vermelho--------*/
+.card1{
+    height: 100px;
+
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border: 3px solid red;
+}
