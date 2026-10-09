@@ -1,0 +1,107 @@
+
+body{
+    background-color: lightgray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.box-login{
+    display: grid;
+
+    background-color: whitesmoke;
+
+    border-radius: 50px;
+
+    width: 450px;
+    height: 550px;
+
+    box-shadow: 20px 20px 20px #26344a;
+}
+
+.campo-dados{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: auto;
+    height: min-content;
+
+    gap: 30px;
+}
+
+.dados-login,
+.dados-senha::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dados-login,
+.dados-senha{
+    width: 350px;
+    height: 40px;
+
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.botao-login-pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+
+    margin-top: 50px;
+}
+
+.botao-login-filho{
+    background-color: White;
+
+    border-radius: 35px;
+    border:1px solid black;
+
+    color: black;
+
+    width: 100px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.botao-login-filho:hover{
+    background-color: white;
+    cursor: pointer;
+
+    border-radius: 35px;
+    border: 1px solid black;
+
+    color: black;
+
+    width: 100px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-login{
+    color: #31425e;
+
+    font-size: xx-large;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 30px;
+}
