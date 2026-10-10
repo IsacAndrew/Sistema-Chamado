@@ -119,6 +119,7 @@ main{
 }
 
 /*-----Azul-----*/
+/*Campo onde fica os contatos*/
 .wrap-contato{
     display: grid;
     grid-template-columns: 1fr;
@@ -127,26 +128,68 @@ main{
 }
 
 /*-----Vermelho-----*/
+/*Campo onde fica um único contato*/
 .contato{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+
+    color: black;
+
+    border: 2px solid red;
+}
+
+/*-----Vermelho-----*/
+/*Campo onde fica o nome do contato*/
+.nome-contato{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    padding: 15px;
+
     border: 2px solid red;
 }
 
 /*-----Verde-----*/
-.wrap-mensagem{
-    display: grid;
+/*Campo onde ficará a foto*/
+.foto-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     border: 2px solid green;
 }
 
-.barra-mensagem{
-    border: 2px solid black;
-    border-radius: 100px;
-
+/*-----Verde-----*/
+/*Campo onde fica as mensagens*/
+.wrap-mensagem{
     display: flex;
+    
+    justify-content: center;
+    align-items: end;
 
-    margin-top: 470px;
-    margin-left: 80px;
+    border: 2px solid green;
+}
+
+/*-----Preto-----*/
+/*Campo onde o usuário escreve a mensagem*/
+.barra-mensagem{
+    border-radius: 100px;
 
     width: 80%;
     height: 10%;
+
+    margin-bottom: 10px;
+
+    border: 2px solid black;
+
+}
+
+/*-----PlaceHolder do Preto-----*/
+/*Placeholder do campo de mensagem*/
+.barra-mensagem::placeholder{
+    color: black;
+    font-style: italic;
+
+    text-align: center;
 }
