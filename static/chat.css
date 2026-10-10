@@ -103,14 +103,50 @@ main{
 }
 
 .box-main{
+    display: grid;
+
+    grid-template-columns: 30% 70%;
     background-color: white;
 
-    width:  1100px;
-    height: 550px;
+    width:  95%;
+    height: 95%;
 
     color: white;
 
     border-radius: 10px;    
 
     box-shadow: 20px 20px 20px #26344a;
+}
+
+/*-----Azul-----*/
+.wrap-contato{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    border: 2px solid blue;
+}
+
+/*-----Vermelho-----*/
+.contato{
+    border: 2px solid red;
+}
+
+/*-----Verde-----*/
+.wrap-mensagem{
+    display: grid;
+
+    border: 2px solid green;
+}
+
+.barra-mensagem{
+    border: 2px solid black;
+    border-radius: 100px;
+
+    display: flex;
+
+    margin-top: 470px;
+    margin-left: 80px;
+
+    width: 80%;
+    height: 10%;
 }

@@ -105,8 +105,8 @@ main{
 .box-main{
     background-color: white;
 
-    width:  1100px;
-    height: 550px;
+    width:  95%;
+    height: 95%;
 
     color: white;
 
@@ -117,16 +117,32 @@ main{
 
 /*--------Azul--------*/
 .wrap-cards{
-    width: auto;
-    height: min-content;
+    width: 100%;
+    height: 100%;
 
-    gap: 40px;
-    margin: 15px 5px 0px;
+    padding: 5px;
+    gap: 5px;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
     border: 2px solid blue;
+}
+
+/*--------Vermelho--------*/
+.card1{
+    height: 100px;
+
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    grid-column: span 2;
+
+    border: 3px solid red;
 }
 
 /*--------Verde--------*/
@@ -141,18 +157,4 @@ main{
     text-align: center;
 
     border: 3px solid green;
-}
-
-/*--------Vermelho--------*/
-.card1{
-    height: 100px;
-
-    color: black;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    border: 3px solid red;
 }
