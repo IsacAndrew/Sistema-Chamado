@@ -14,15 +14,14 @@
             <h1>Bem Vindo</h1>
         </div>
         
-        <form>
+        <form action="/" method="POST">
             <div class="campo-dados">
-                <input type="text" class="dados-login" placeholder=" Insira o seu login">
-                <input type="password" class="dados-senha" placeholder=" Insira sua senha">       
+                <input name="login_html" id="login_html" type="text" class="dados-login" placeholder=" Insira o seu login">
+                <input name="senha_html" id="senha_html" type="password" class="dados-senha" placeholder=" Insira sua senha">       
             </div>
 
             <div class="botao-login-pai">
-                <button type="submit" class="botao-login-filho" href="inicio.html">Entrar</button> 
-                <!--Sem autenticação pois agora é só o front-->
+                <button id="botao_html" type="submit" class="botao-login-filho">Entrar</button> 
             </div>
         </form>
         
